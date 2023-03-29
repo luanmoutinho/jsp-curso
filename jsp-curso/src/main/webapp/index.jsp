@@ -9,7 +9,7 @@
 <body>
 	<h1>Bem vindo ao curso jsp</h1>
 	<%
-	out.print("Seu sucesso garantido!");
+	out.print("Seu sucesso garantido!!");
 	%>
 </body>
 </html>
