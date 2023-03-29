@@ -9,7 +9,7 @@
 <body>
 	<h1>Bem vindo ao curso jsp</h1>
 
-	<form action="receber-nome.jsp" method="get">
+	<form action="ServletLogin" method="post">
 		<label for="nome">Nome</label> <input type="text" name="nome">
 		<label for="idade">Idade</label> <input type="text" name="idade">
 
