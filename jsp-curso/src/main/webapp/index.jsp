@@ -10,11 +10,33 @@
 	<h1>Bem vindo ao curso jsp</h1>
 
 	<form action="ServletLogin" method="post">
-		<label for="nome">Nome</label> <input type="text" name="nome">
-		<label for="idade">Idade</label> <input type="text" name="idade">
+	<input type="hidden" value="<%= request.getParameter("url")%>" name="url">
+		<table>
+			<tr>
+				<td><label>Login</label></td>
+				<td>
+					<input type="text" name="login">
+				</td>
+			</tr>
 
-		<input type="submit" value="Enviar">
+			<tr>
+				<td><label>Senha</label> </td>
+				<td>
+					<input type="password" name="senha">
+				</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Enviar"></td>
+			</tr>
+
+		</table>
 
 	</form>
+	<h3>${msg}</h3>
+	
+	
+	
 </body>
 </html>
