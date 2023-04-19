@@ -70,6 +70,6 @@ public class ServletLogin extends HttpServlet {
 			
 		}
 
-	}// Fim doPost
+	}// Fim doPost();
 
 }
