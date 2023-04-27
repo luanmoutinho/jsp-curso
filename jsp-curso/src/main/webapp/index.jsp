@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,9 @@
 	rel="stylesheet"
 	integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 	crossorigin="anonymous">
+	
 </head>
+
 <body>
 	<div style="margin: 200px auto; border: 1px solid blue; padding: 25px; width:500px;" >
 		<h1 style="margin-left: 180px;">Login</h1>
@@ -41,7 +44,7 @@
 				style="width: 180px; margin-left: 130px;">Sign in</button>
 
 		</form>
-		<h3>${msg}</h3>
+		<h5>${msg}</h5>
 	</div>
 
 	<script

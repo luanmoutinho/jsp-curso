@@ -1,14 +1,48 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Página Principal</title>
-</head>
+<html lang="en">
+
+<jsp:include page="head.jsp"></jsp:include>
+
+
 <body>
+	<jsp:include page="theme-loader.jsp"></jsp:include>
+	<!-- Pre-loader end -->
+	<div id="pcoded" class="pcoded">
+		<div class="pcoded-overlay-box"></div>
+		<div class="pcoded-container navbar-wrapper">
+			<jsp:include page="navbar.jsp"></jsp:include>
 
-<h1>Tela Principal após o Login</h1>
+			<div class="pcoded-main-container">
+				<div class="pcoded-wrapper">
+					<jsp:include page="navbarMainMenu.jsp"></jsp:include>
+					<div class="pcoded-content">
+						<jsp:include page="page-header.jsp"></jsp:include>
+						<div class="pcoded-inner-content">
+							<!-- Main-body start -->
+							<div class="main-body">
+								<div class="page-wrapper">
+									<!-- Page-body start -->
+									<div class="page-body">
+										<div class="row">
+											<h1>conteudo base da nossa página principal</h1>
+											<!--  project and team member end -->
+										</div>
+									</div>
+									<!-- Page-body end -->
+								</div>
+								<div id="styleSelector"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+
+	<jsp:include page="javascriptFiles.jsp"></jsp:include>
 </body>
+
 </html>
