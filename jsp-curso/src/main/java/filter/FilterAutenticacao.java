@@ -49,7 +49,8 @@ public class FilterAutenticacao extends HttpFilter implements Filter {
 			String usuarioLogado = (String) session.getAttribute("usuario");
 			String urlParaAutenticar = req.getServletPath();
 
-			if (usuarioLogado == null && !urlParaAutenticar.equalsIgnoreCase("/principal/ServletLogin")) {
+			if (usuarioLogado == null && 
+					!urlParaAutenticar.equalsIgnoreCase("/principal/ServletLogin")) {
 				RequestDispatcher redireciona = request.getRequestDispatcher("/index.jsp?url=" + urlParaAutenticar);
 				request.setAttribute("msg", "Por favor, realize o login!");
 				redireciona.forward(request, response);
